@@ -48,7 +48,7 @@ main {
     font-family: "Karla", sans-serif;
     border-radius: 6px;
     border: 1px solid #D5D4D8;
-    padding-left: 5px;
+    text-indent: 5px;
 }
 
 .form--btn {
@@ -58,4 +58,5 @@ main {
     font-family: "Karla", sans-serif;
     border-radius: 6px;
     border: none;
+    cursor: pointer;
 }
