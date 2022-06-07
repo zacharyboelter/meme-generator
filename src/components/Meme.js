@@ -34,10 +34,12 @@ export default function Meme() {
 
                 </button>
             </div>
+            <div className="img--container">
                 <img
                     src={memeImage}
                     className="meme--img"
                 />
+            </div>
         </main>
     )
 }
