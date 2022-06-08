@@ -47,3 +47,28 @@ export default function Meme() {
 
 
 
+
+
+
+// import React from "react"
+
+// export default function App() {
+// //    example of how to flip to opposite boolean
+//     const [isGoingOut, setIsGoingOut] = React.useState(true) 
+    
+//     function flip(){
+//          setIsGoingOut(function(prevIsGoingOut){
+//         return !prevIsGoingOut
+//     })
+//     }
+   
+       
+//     return (
+//         <div className="state">
+//             <h1 className="state--title">Do I feel like going out tonight?</h1>
+//             <div className="state--value" onClick={flip}>
+//                 <h1 >{isGoingOut ? "Yassss" : "Noaarr"}</h1>
+//             </div>
+//         </div>
+//     )
+// }
