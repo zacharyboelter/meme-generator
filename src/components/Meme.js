@@ -116,14 +116,14 @@ export default function Meme() {
 //     })
 
 
-export default function App() {
-    const [contact, setContact] = React.useState({
-        firstName: "John",
-        lastName: "Doe",
-        phone: "+1 (719) 555-1212",
-        email: "itsmyrealname@example.com",
-        isFavorite: true
-    })
+// export default function App() {
+//     const [contact, setContact] = React.useState({
+//         firstName: "John",
+//         lastName: "Doe",
+//         phone: "+1 (719) 555-1212",
+//         email: "itsmyrealname@example.com",
+//         isFavorite: true
+//     })
     /**
      * Challenge: Use a ternary to determine which star image filename
      * should be used based on the `contact.isFavorite` property
@@ -134,10 +134,15 @@ export default function App() {
     
 //     let starIcon = contact.isFavorite ? "star-filled.png" : "star-empty.png"
     
-    
-//     function toggleFavorite() {
-//         console.log("Toggle Favorite")
-//     }
+    // how to change one thing in the object without retyping everything.
+    // function toggleFavorite() {
+    //     setContact(prevState => {
+    //         return {
+    //             ...prevState,
+    //             isFavorite: !prevState.isFavorite
+    //         }
+    //     })
+    // }
     
 //     return (
 //         <main>
