@@ -16,7 +16,13 @@ export default function Meme() {
     function getMemeImage() {
         const memesArray = memesData.data.memes
         const randomNumber = Math.floor(Math.random() * memesArray.length)
-        setMemeImage(memesArray[randomNumber].url)
+        const url = memesArray[randomNumber].url
+        setMeme(prevState => {
+            return {
+                ...prevState,
+                randomImage: url
+            }
+        })
     }
 
     return (
@@ -42,7 +48,7 @@ export default function Meme() {
             </div>
             <div className="img--container">
                 <img
-                    src={memeImage}
+                    src={meme.randomImage}
                     className="meme--img"
                 />
             </div>
