@@ -177,3 +177,28 @@ export default function Meme() {
 //         </main>
 //     )
 // }
+
+
+// export default function App() {
+//     const [squares, setSquares] = React.useState(boxes)
+    
+//     const squareElements = squares.map(square => (
+//         <Box 
+//             key={square.id}
+//             on={square.on}
+//         />
+//     ))
+    /**
+// import React from 'react'
+
+// export default function Box(props){
+//     console.log(props)
+    
+//     const styles = {
+//         backgroundColor: props.on ? '#222222' : '#cccccc'
+//     }
+    
+//     return (
+//         <div className="box" style={styles}></div>
+//     )
+// }
