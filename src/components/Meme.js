@@ -201,4 +201,3 @@ export default function Meme() {
 //     return (
 //         <div className="box" style={styles}></div>
 //     )
-// }
