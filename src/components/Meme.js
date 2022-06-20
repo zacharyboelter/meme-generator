@@ -191,13 +191,23 @@ export default function Meme() {
     /**
 // import React from 'react'
 
-// export default function Box(props){
-//     console.log(props)
+import React from "react"
+
+export default function Box(props) {
+   
+    const [flip, setFlip] = React.useState(props.on)
     
-//     const styles = {
-//         backgroundColor: props.on ? '#222222' : '#cccccc'
-//     }
+    function newFlip() {
+        setFlip(function(prevState){
+            return !prevState
+        })
+    }
     
-//     return (
-//         <div className="box" style={styles}></div>
-//     )
+    const styles = {
+        backgroundColor: flip ? "#222222" : "transparent"
+    }
+    
+    return (
+        <div style={styles} className="box" onClick={newFlip}></div>
+    )
+}
