@@ -181,6 +181,14 @@ export default function Meme() {
 
 // export default function App() {
 //     const [squares, setSquares] = React.useState(boxes)
+
+// function toggle(id) {
+//     setSquares(prevSquares => {
+//         return prevSquares.map((square) => {
+//             return square.id === id ? {...square, on: !square.on} : square
+//         })
+//     })
+// }
     
 //     const squareElements = squares.map(square => (
 //         <Box 
@@ -195,19 +203,16 @@ import React from "react"
 
 export default function Box(props) {
    
-    const [flip, setFlip] = React.useState(props.on)
-    
-    function newFlip() {
-        setFlip(function(prevState){
-            return !prevState
-        })
-    }
     
     const styles = {
         backgroundColor: flip ? "#222222" : "transparent"
     }
     
     return (
-        <div style={styles} className="box" onClick={newFlip}></div>
-    )
+        <div style={styles} 
+        className="box" 
+        onClick={()=>props.toggle(props.id)}
+        >
+        </div>
+    })
 }
