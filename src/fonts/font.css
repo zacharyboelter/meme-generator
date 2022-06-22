@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'KaftanSerifTrial-Regular';
+  src: url('KaftanSerifTrial-Regular.eot');
+  src: url('KaftanSerifTrial-Regular.eot?#iefix') format('embedded-opentype'),
+       url('KaftanSerifTrial-Regular.svg#KaftanSerifTrial-Regular') format('svg'),
+       url('KaftanSerifTrial-Regular.ttf') format('truetype'),
+       url('KaftanSerifTrial-Regular.woff') format('woff'),
+       url('KaftanSerifTrial-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
