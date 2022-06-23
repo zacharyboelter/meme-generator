@@ -1,3 +1,4 @@
+import { getValue } from "@testing-library/user-event/dist/utils";
 import React from "react";
 import memesData from "../memesData.js"
 
@@ -6,9 +7,9 @@ export default function Meme() {
     const [meme, setMeme] = React.useState({
         topText: "",
         bottomText: "",
-        randomImage: "http://i.imgflip.com/1bij.jpg" 
+        randomImage: "http://i.imgflip.com/1bij.jpg"
     })
-    
+
     const [allMemeImages, setAllMemeImages] = React.useState(memesData)
 
 
@@ -67,14 +68,14 @@ export default function Meme() {
 // export default function App() {
 // //    example of how to flip to opposite boolean
 //     const [isGoingOut, setIsGoingOut] = React.useState(true) 
-    
+
 //     function flip(){
 //          setIsGoingOut(function(prevIsGoingOut){
 //         return !prevIsGoingOut
 //     })
 //     }
-   
-       
+
+
 //     return (
 //         <div className="state">
 //             <h1 className="state--title">Do I feel like going out tonight?</h1>
@@ -97,16 +98,16 @@ export default function Meme() {
 //      * Don't worry about fixing `addItem` quite yet.
 //      */
 //     const [thingsArray, setThingsArray] = React.useState(["Thing 1", "Thing 2"])
-    
+
 //     function addItem() {
 //         // We'll work on this next
 //         setThingsArray(prevThingsArray => {
 //             return [...prevThingsArray, `Thing ${prevThingsArray.length + 1}`]
 //         })
 //     }
-    
+
 //     const thingsElements = thingsArray.map(thing => <p key={thing}>{thing}</p>)
-    
+
 //     return (
 //         <div>
 //             <button onClick={addItem}>Add Item</button>
@@ -136,26 +137,26 @@ export default function Meme() {
 //         email: "itsmyrealname@example.com",
 //         isFavorite: true
 //     })
-    /**
-     * Challenge: Use a ternary to determine which star image filename
-     * should be used based on the `contact.isFavorite` property
-     * 
-     * `true` => "star-filled.png"
-     * `false` => "star-empty.png"
-     */
-    
+/**
+ * Challenge: Use a ternary to determine which star image filename
+ * should be used based on the `contact.isFavorite` property
+ * 
+ * `true` => "star-filled.png"
+ * `false` => "star-empty.png"
+ */
+
 //     let starIcon = contact.isFavorite ? "star-filled.png" : "star-empty.png"
-    
-    // how to change one thing in the object without retyping everything.
-    // function toggleFavorite() {
-    //     setContact(prevState => {
-    //         return {
-    //             ...prevState,
-    //             isFavorite: !prevState.isFavorite
-    //         }
-    //     })
-    // }
-    
+
+// how to change one thing in the object without retyping everything.
+// function toggleFavorite() {
+//     setContact(prevState => {
+//         return {
+//             ...prevState,
+//             isFavorite: !prevState.isFavorite
+//         }
+//     })
+// }
+
 //     return (
 //         <main>
 //             <article className="card">
@@ -172,7 +173,7 @@ export default function Meme() {
 //                     <p className="card--contact">{contact.phone}</p>
 //                     <p className="card--contact">{contact.email}</p>
 //                 </div>
-                
+
 //             </article>
 //         </main>
 //     )
@@ -189,46 +190,46 @@ export default function Meme() {
 //         })
 //     })
 // }
-    
+
 //     const squareElements = squares.map(square => (
 //         <Box 
 //             key={square.id}
 //             on={square.on}
 //         />
 //     ))
-    /**
+/**
 // import React from 'react'
 
 import React from "react"
 
 export default function Box(props) {
-   
-    
-    const styles = {
-        backgroundColor: flip ? "#222222" : "transparent"
-    }
-    
-    return (
-        <div style={styles} 
-        className="box" 
-        onClick={()=>props.toggle(props.id)}
-        >
-        </div>
-    })
+ 
+ 
+const styles = {
+    backgroundColor: flip ? "#222222" : "transparent"
+}
+ 
+return (
+    <div style={styles} 
+    className="box" 
+    onClick={()=>props.toggle(props.id)}
+    >
+    </div>
+})
 }
 
 import React from "react"
 
 export default function App() {
-    const [messages, setMessages] = React.useState(["a"])
-    /**
-     * Challenge:
-     * - If there are no unread messages, display "You're all caught up!"
-     * - If there are > 0 unread messages, display "You have <n> unread
-     *   message(s)"
-     *      - If there's exactly 1 unread message, it should read "message"
-     *        (singular)
-     */
+const [messages, setMessages] = React.useState(["a"])
+/**
+ * Challenge:
+ * - If there are no unread messages, display "You're all caught up!"
+ * - If there are > 0 unread messages, display "You have <n> unread
+ *   message(s)"
+ *      - If there's exactly 1 unread message, it should read "message"
+ *        (singular)
+ */
 //      return (
 //         <div>
 //             {
@@ -244,13 +245,13 @@ export default function App() {
 
 // export default function Form() {
 //     const [firstName, setFirstName] = React.useState("")
-    
+
 //     console.log(firstName)
-    
+
 //     function handleChange(event) {
 //         setFirstName(event.target.value)
 //     }
-    
+
 //     return (
 //         <form>
 //             <input
@@ -269,9 +270,9 @@ export default function App() {
 //     const [formData, setFormData] = React.useState(
 //         {firstName: "", lastName: ""}
 //     )
-    
+
 //     console.log(formData)
-    
+
 //     function handleChange(event) {
 //         setFormData(prevFormData => {
 //             return {
@@ -280,7 +281,7 @@ export default function App() {
 //             }
 //         })
 //     }
-    
+
 //     return (
 //         <form>
 //             <input
@@ -288,12 +289,14 @@ export default function App() {
 //                 placeholder="First Name"
 //                 onChange={handleChange}
 //                 name="firstName"
+                    // value = { formData.firstName }
 //             />
 //             <input
 //                 type="text"
 //                 placeholder="Last Name"
 //                 onChange={handleChange}
 //                 name="lastName"
+                    // value = { formData.lastName }
 //             />
 //         </form>
 //     )
