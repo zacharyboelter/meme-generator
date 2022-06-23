@@ -268,11 +268,9 @@ const [messages, setMessages] = React.useState(["a"])
 
 // export default function Form() {
 //     const [formData, setFormData] = React.useState(
-//         {firstName: "", lastName: ""}
+//         {firstName: "", lastName: "", email: ""}
 //     )
-
-//     console.log(formData)
-
+    
 //     function handleChange(event) {
 //         setFormData(prevFormData => {
 //             return {
@@ -281,7 +279,7 @@ const [messages, setMessages] = React.useState(["a"])
 //             }
 //         })
 //     }
-
+    
 //     return (
 //         <form>
 //             <input
@@ -289,14 +287,21 @@ const [messages, setMessages] = React.useState(["a"])
 //                 placeholder="First Name"
 //                 onChange={handleChange}
 //                 name="firstName"
-                    // value = { formData.firstName }
+//                 value={formData.firstName}
 //             />
 //             <input
 //                 type="text"
 //                 placeholder="Last Name"
 //                 onChange={handleChange}
 //                 name="lastName"
-                    // value = { formData.lastName }
+//                 value={formData.lastName}
+//             />
+//             <input
+//                 type="email"
+//                 placeholder="Email"
+//                 onChange={handleChange}
+//                 name="email"
+//                 value={formData.email}
 //             />
 //         </form>
 //     )
