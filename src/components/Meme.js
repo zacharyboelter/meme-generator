@@ -268,14 +268,21 @@ const [messages, setMessages] = React.useState(["a"])
 
 // export default function Form() {
 //     const [formData, setFormData] = React.useState(
-//         {firstName: "", lastName: "", email: ""}
+//         { firstName: "",
+        //   lastName: "",
+        //   email: "",
+        //   comments: "",
+        //   isFriendly: true,
+
+// }
 //     )
     
 //     function handleChange(event) {
+            // const {name, value, type, checked} = event.target
 //         setFormData(prevFormData => {
 //             return {
 //                 ...prevFormData,
-//                 [event.target.name]: event.target.value
+//                 [.name]: type === 'checkbox' ? checked : value
 //             }
 //         })
 //     }
@@ -311,7 +318,10 @@ const [messages, setMessages] = React.useState(["a"])
                 // />
             //     <input 
             //     type="checkbox" 
-            //     id="isFriendly" 
+                    // id="isFriendly" 
+                    // checked={formData.isFriendly}
+                    // name="isFriendly"
+                    // onChange={handleChange}
             // />
             // <label htmlFor="isFriendly">Are you friendly?</label>
             // <br />
