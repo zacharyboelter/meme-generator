@@ -309,6 +309,12 @@ const [messages, setMessages] = React.useState(["a"])
                 //     onChange={handleChange}
                 //     name="comments"
                 // />
+            //     <input 
+            //     type="checkbox" 
+            //     id="isFriendly" 
+            // />
+            // <label htmlFor="isFriendly">Are you friendly?</label>
+            // <br />
 //         </form>
 //     )
 // }
